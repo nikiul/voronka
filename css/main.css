@@ -562,12 +562,22 @@ input:-ms-input-placeholder {
 }
 
 .application {
+  position: relative;
   padding-top: 99px;
   padding-bottom: 103px;
   background-image: url("../img/application/application-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.application::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -2px;
+  background-color: #002e45;
 }
 
 .application__content {
