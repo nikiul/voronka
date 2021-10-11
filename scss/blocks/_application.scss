@@ -1,0 +1,112 @@
+.application {
+    padding-top: 99px;
+    padding-bottom: 103px;
+    background-image: url('../img/application/application-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.application__content {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 49px 23px 42px 23px;
+    background-color: #002e45;
+}
+
+.application__title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.application__title_third {
+    font-size: 35px;
+}
+
+.application__undertitle {
+    margin-bottom: 42px;
+    font-weight: 500;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+}
+
+.application__form {
+    width: 100%;
+}
+
+.application__form-cols {
+    margin-bottom: 23px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.application__col {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.application__input-name {
+    position: relative;
+    margin-bottom: 28px;
+
+    span {
+        position: absolute;
+        top: 50%;
+        left: 110px;
+        transform: translate(0, -50%);
+        font-weight: 500;
+        font-size: 18px;
+        color: #c60000;
+    }
+
+    // &:hover span {
+    //     display: none;
+    // }
+}
+
+.application__input-tel {
+    position: relative;
+    margin-bottom: 28px;
+
+    span {
+        position: absolute;
+        top: 50%;
+        left: 208px;
+        transform: translate(0, -50%);
+        font-weight: 500;
+        font-size: 18px;
+        color: #c60000;
+    }
+}
+
+.applciation__btn {
+    margin-top: 28px;
+    padding-top: 10px;
+    padding-bottom: 11px;
+    background-color: transparent;
+
+    &:hover {
+        border: 3px solid #002e45;
+        background-color: #fff;
+        color: #002e45;
+    }
+}
+
+.application__checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    label {
+        display: flex;
+        align-items: center;
+    }
+}

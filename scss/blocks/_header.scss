@@ -1,0 +1,38 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 33px;
+    padding-bottom: 33px;
+    // background-color: black;
+}
+
+.header__content {
+
+}
+
+.header__nav {
+
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list-item {
+
+}
+
+.header__list-link {
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.header__logo {
+
+}

@@ -1,0 +1,41 @@
+.presentation {
+    padding-top: 280px;
+    padding-bottom: 500px;
+    background-image: url('../img/presentation/presentation-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.presentation__content {
+    position: relative;
+    left: 45%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.presentation__title {
+    margin-bottom: 40px;
+    color: #062b50;
+}
+
+.presentation__undertitle {
+    margin-bottom: 90px;
+    font-weight: 500;
+    font-size: 26px;
+    color: #062b50;
+}
+
+.presentation__btn {
+    padding: 18px 23px 16px 23px;
+    border-color: #1e2c34;
+    color: #1e2c34;
+
+    &:hover {
+        border: 3px solid #fff;
+        background-color: #1e2c34;
+        color: #fff;
+    }
+}

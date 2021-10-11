@@ -1,0 +1,52 @@
+.footer {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__logo {
+
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+
+    a {
+        margin-right: 25px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.footer__tel,
+.footer__location,
+.footer__mail {
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-right: 14px;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 19px;
+        color: #1E2C34;
+    }
+}
+
+.footer__location {
+
+}
+
+.footer__mail {
+
+}
