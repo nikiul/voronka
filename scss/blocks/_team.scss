@@ -1,13 +1,38 @@
 .team {
     position: relative;
-    // padding-top: 380px;
-    // padding-bottom: 335px;
+    padding-top: 380px;
+    padding-bottom: 335px;
     // height: 100vh;
     // max-height: 940px;
-    height: 100vh;
-    min-height: 600px;
-    max-height: 940px;
+    // height: 100vh;
+    // min-height: 600px;
+    // max-height: 940px;
     max-width: 100%;
+
+    @media (max-width: 1200px) {
+        padding-top: 340px;
+        padding-bottom: 300px;
+    }
+
+    @media (max-width: 1090px) {
+        padding-top: 280px;
+        padding-bottom: 250px;
+    }
+
+    @media (max-width: 768px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+    @media (max-width: 600px) {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    @media (max-width: 450px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }
 
 .team__bg {
@@ -51,5 +76,14 @@
 
     &:last-child {
         margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    @media (max-width: 500px) {
+        font-size: 18px;
     }
 }

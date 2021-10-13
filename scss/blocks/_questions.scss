@@ -1,6 +1,11 @@
 .questions {
     padding-top: 80px;
     padding-bottom: 70px;
+
+    @media (max-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 
 .questions__title {
@@ -19,6 +24,14 @@
     &:last-child {
         margin-bottom: 0;
     }
+
+    @media (max-width: 768px) {
+        margin-bottom: 30px;
+    }
+
+    @media (max-width: 550px) {
+        margin-bottom: 20px;
+    }
 }
 
 .question__item-title {
@@ -27,10 +40,25 @@
     cursor: pointer;
 
     p {
-        font-weight: 900;
-        font-size: 26px;
-        color: #000;
-        border-bottom: 3px dotted #000;
+        span {
+            font-weight: 900;
+            font-size: 26px;
+            color: #000;
+            border-bottom: 3px dotted #000;
+
+            @media (max-width: 768px) {
+                font-size: 24px;
+            }
+
+            @media (max-width: 550px) {
+                font-size: 20px;
+            }
+
+            @media (max-width: 450px) {
+                font-size: 18px;
+            }
+        }
+
     }
 }
 

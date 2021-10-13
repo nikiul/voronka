@@ -7,6 +7,19 @@
     background-size: cover;
     background-position: center;
 
+    @media (max-width: 768px) {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    @media (max-width: 500px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.application_first {
+
     &::before {
         content: '';
         position: absolute;
@@ -27,6 +40,28 @@
     align-items: center;
     padding: 49px 23px 42px 23px;
     background-color: #002e45;
+
+    @media (max-width: 1140px) {
+        padding: 25px 20px;
+        width: 900px;
+    }
+
+    @media (max-width: 960px) {
+        width: 770px;
+    }
+
+    @media (max-width: 800px) {
+        width: 560px;
+    }
+
+    @media (max-width: 600px) {
+        padding: 15px 15px;
+        width: 95%;
+    }
+
+    @media (max-width: 450px) {
+        width: 100%;
+    }
 }
 
 .application__title {
@@ -36,6 +71,10 @@
 
 .application__title_third {
     font-size: 35px;
+
+    @media (max-width: 500px) {
+        font-size: 25px;
+    }
 }
 
 .application__undertitle {
@@ -44,6 +83,10 @@
     font-size: 24px;
     color: #fff;
     text-align: center;
+
+    @media (max-width: 768px) {
+        font-size: 20px;
+    }
 }
 
 .application__form {
@@ -55,12 +98,36 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 800px) {
+        margin-bottom: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 .application__col {
     width: 30%;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 1140px) {
+        width: 32%;
+    }
+
+    @media (max-width: 800px) {
+        margin-bottom: 28px;
+        width: 500px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (max-width: 600px) {
+        width: 100%;
+    }
 }
 
 .application__input-name {
@@ -77,9 +144,13 @@
         color: #c60000;
     }
 
-    // &:hover span {
-    //     display: none;
-    // }
+    @media (max-width: 800px) {
+        width: 500px;
+    }
+
+    @media (max-width: 600px) {
+        width: 100%;
+    }
 }
 
 .application__input-tel {
@@ -95,6 +166,14 @@
         font-size: 18px;
         color: #c60000;
     }
+
+    @media (max-width: 800px) {
+        width: 500px;
+    }
+
+    @media (max-width: 600px) {
+        width: 100%;
+    }
 }
 
 .applciation__btn {
@@ -107,6 +186,18 @@
         border: 3px solid #002e45;
         background-color: #fff;
         color: #002e45;
+    }
+
+    @media (max-width:768px) {
+        font-size: 20px;
+    }
+
+    @media (max-width: 450px) {
+        font-size: 18px;
+    }
+
+    @media (max-width: 368px) {
+        width: 100%;
     }
 }
 

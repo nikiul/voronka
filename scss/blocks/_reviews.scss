@@ -7,16 +7,34 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    @media (max-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+
+    @media (max-width: 550px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
 
 .reviews__title {
     margin-bottom: 118px;
     color: #000;
     text-align: center;
+
+    @media (max-width: 768px) {
+        margin-bottom: 60px;
+    }
+
+    @media (max-width: 500px) {
+        margin-bottom: 40px;
+    }
 }
 
 .reviews__content {
-
+    width: 100%;
 }
 
 .owl-carousel {
@@ -43,12 +61,27 @@
     span {
         display: none;
     }
+
+    @media (max-width: 1200px) {
+        right: -42px;
+    }
+
+    @media (max-width: 500px) {
+        right: -36px;
+        width: 35px;
+        height: 35px;
+    }
+
+    @media (max-width: 400px) {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 .reviews__content.owl-carousel .owl-nav button.owl-prev {
     position: absolute;
     top: 38%;
-    left: -65px;
+    left: -30px;
     transform: translate(-50%, 0);
     width: 45px;
     height: 45px;
@@ -61,21 +94,65 @@
     span {
         display: none;
     }
+
+    @media (max-width: 1200px) {
+        left: 0;
+    }
+
+    @media (max-width: 500px) {
+        width: 35px;
+        height: 35px;
+    }
+
+    @media (max-width: 400px) {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 .reviews__item {
     width: 100%;
     display: inline-flex;
+
+    @media (max-width: 1200px) {
+        position: relative;
+        // width: 65%;
+        width: 80%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    @media (max-width: 520px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .reviews__item-img {
     margin-right: 26px;
-    width: 190px;
-    height: 190px;
+    width: 190px !important;
+    height: 190px !important;
     border-radius: 50%;
 
     img {
-        width: auto !important;
+        // width: auto !important;
+        width: 190px !important;
+        height: 190px !important;
+
+        @media (max-width: 650px) {
+            width: 140px !important;
+            height: 140px !important;
+        }
+    }
+
+    @media (max-width: 650px) {
+        margin-bottom: 10px;
+        width: 140px !important;
+        height: 140px !important;
+    }
+
+    @media (max-width: 520px) {
+        margin-right: 0;
     }
 }
 
@@ -88,6 +165,10 @@
     font-weight: 900;
     font-size: 25px;
     color: #000;
+
+    @media (max-width: 520px) {
+        text-align: center;
+    }
 }
 
 .reviews__item-company {
@@ -95,6 +176,10 @@
     font-weight: 900;
     font-size: 15px;
     color: #000;
+
+    @media (max-width: 520px) {
+        text-align: center;
+    }
 }
 
 .reviews__item-text,

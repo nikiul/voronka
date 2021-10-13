@@ -5,6 +5,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @media (max-width: 768px) {
+        padding-top: 300px;
+        padding-bottom: 155px;
+    }
 }
 
 .hero__content {
@@ -20,22 +25,58 @@
     font-size: 65px;
     text-align: center;
     color: #fff;
+
+    @media (max-width: 768px) {
+        font-size: 50px;
+        margin-bottom: 25px;
+    }
+
+    @media (max-width: 550px) {
+        font-size: 40px;
+    }
+
+    @media (max-width: 450px) {
+        font-size: 30px;
+    }
 }
 
 .header__undertitle {
+    max-width: 800px;
     margin-bottom: 48px;
     font-weight: 500;
     font-size: 24px;
     color: #fff;
     text-align: center;
+
+    @media (max-width: 768px) {
+        font-size: 20px;
+        margin-bottom: 35px;
+    }
+
+    @media (max-width: 550px) {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    @media (max-width: 450px) {
+        font-size: 16px;
+    }
 }
 
 .hero__btn {
-
 
     &:hover {
         border: 3px solid #002e45;
         background-color: #fff;
         color: #002e45;
+    }
+
+    @media (max-width: 768px) {
+        padding: 15px 60px;
+        font-size: 20px;
+    }
+
+    @media (max-width: 450px) {
+        font-size: 18px;
     }
 }

@@ -8,14 +8,43 @@ $("a.scroll-to").on("click", function(e){
 });
 //
 
+
+// открытие/закрытие мобильного меню
+const headerBurger = document.querySelector('.header__burger');
+const headerBurgerIcon = document.querySelector('.header__burger-icon');
+const headerBurgerClose = document.querySelector('.header__burger-close')
+const headerBurgerCloseIcon = document.querySelector('.header__burger-close-icon');
+const headerMenuWrap = document.querySelector('.header__nav');
+const headerMenu = document.querySelector('.header__list');
+
+headerBurger.addEventListener('click', function(){
+    headerMenuWrap.classList.add('header__nav_active');
+    headerMenu.classList.add('header__list_active');
+})
+
+headerBurgerClose.addEventListener('click', function(){
+    headerMenuWrap.classList.remove('header__nav_active');
+    headerMenu.classList.remove('header__list_active');
+})
+//
+
+
 // карусель с перелистыванием стрелками
 var owl = $(".reviews__content");
 owl.owlCarousel({
     loop:true,
-    items: 2,
     margin:10,
     nav:true,
-    dots: false
+    dots: false,
+    responsive:{
+      0:{
+          items:1,
+          center: true
+      },
+      1200:{
+          items:2
+      }
+    }
 });
 owl.on('mousewheel', '.owl-stage', function(e) {
   if (e.deltaY < 0) {
