@@ -11,10 +11,8 @@ $("a.scroll-to").on("click", function(e){
 
 // открытие/закрытие мобильного меню
 const headerBurger = document.querySelector('.header__burger');
-const headerBurgerActive = document.querySelector('.header__burger');
+// const headerBurgerActive = document.querySelector('.header__burger');
 const headerBurgerIcon = document.querySelector('.header__burger-icon');
-// const headerBurgerClose = document.querySelector('.header__burger-close')
-// const headerBurgerCloseIcon = document.querySelector('.header__burger-close-icon');
 const headerMenuWrap = document.querySelector('.header__nav');
 const headerMenu = document.querySelector('.header__list');
 const heroBtn = document.querySelector('.hero__btn');
@@ -23,20 +21,15 @@ const modalWrapForm = document.querySelector('.modal__wrap_form');
 const modalFormClose = document.querySelector('.modal__form-close');
 const modalThanksClose = document.querySelector('.modal__thanks-close');
 const modalWrapThanks = document.querySelector('.modal__wrap_thanks');
+const bodyLock = document.querySelector('body');
 
 headerBurger.addEventListener('click', function(){
     headerMenuWrap.classList.toggle('header__nav_active');
     headerMenu.classList.toggle('header__list_active');
-    headerBurgerActive.classList.toggle('header__burger_active');
+    headerBurger.classList.toggle('header__burger_active');
     headerBurgerIcon.classList.toggle('header__burger-icon_active');
+    bodyLock.classList.toggle('body__lock');
 })
-
-// headerBurger.addEventListener('click', function(){
-//     headerMenuWrap.classList.remove('header__nav_active');
-//     headerMenu.classList.remove('header__list_active');
-//     headerBurgerActive.classList.remove('header__burger_active');
-//     headerBurgerIcon.classList.remove('header__burger-icon_active');
-// })
 
 heroBtn.addEventListener('click', function(){
     modalWrapForm.classList.add('modal__wrap_form_active');
@@ -68,6 +61,26 @@ if(applicationCol) {
     }
 };
 //
+
+
+// скрываем мобильную навигацию при клике на ссылки
+const listItem = document.querySelectorAll('.header__list-item');
+if(listItem) {
+    for (let list of listItem) {
+        const itemLink = list.querySelector('.header__list-link');
+
+        if(itemLink) {
+            itemLink.addEventListener('click', function(){
+                headerMenuWrap.classList.remove('header__nav_active');
+                headerMenu.classList.remove('header__list_active');
+                headerBurger.classList.remove('header__burger_active');
+                headerBurgerIcon.classList.remove('header__burger-icon_active');
+                bodyLock.classList.remove('body__lock');
+            })
+        }
+
+    }
+};
 
 
 // Закрваем модалку при клике вне модалки

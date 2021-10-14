@@ -63,6 +63,10 @@ body {
   font-style: normal;
 }
 
+.body__lock {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1270px;
   margin-left: auto;
@@ -2165,6 +2169,13 @@ input:-ms-input-placeholder {
 @media (max-width: 500px) {
   .team__desc {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 350px) {
+  .team__desc {
+    font-size: 16px;
+    margin-bottom: 15px;
   }
 }
 

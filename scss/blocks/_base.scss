@@ -13,6 +13,10 @@ body {
     font-style: normal;
 }
 
+.body__lock {
+    overflow: hidden;
+}
+
 .container {
     max-width: 1270px;
     margin-left: auto;
