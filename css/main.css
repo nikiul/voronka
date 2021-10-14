@@ -123,6 +123,7 @@ input {
   font-size: 18px;
   line-height: 24px;
   color: #444242;
+  -webkit-appearance: none;
 }
 
 input::-webkit-input-placeholder {

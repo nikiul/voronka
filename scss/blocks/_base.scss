@@ -67,7 +67,8 @@ input {
     font-size: 18px;
     line-height: 24px;
     color: rgb(68, 66, 66);
-
+    -webkit-appearance: none;
+    
     &::-webkit-input-placeholder {
         font-family: 'MuseoSans', sans-serif;
         font-style: normal;
