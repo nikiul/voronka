@@ -11,9 +11,10 @@ $("a.scroll-to").on("click", function(e){
 
 // открытие/закрытие мобильного меню
 const headerBurger = document.querySelector('.header__burger');
+const headerBurgerActive = document.querySelector('.header__burger');
 const headerBurgerIcon = document.querySelector('.header__burger-icon');
-const headerBurgerClose = document.querySelector('.header__burger-close')
-const headerBurgerCloseIcon = document.querySelector('.header__burger-close-icon');
+// const headerBurgerClose = document.querySelector('.header__burger-close')
+// const headerBurgerCloseIcon = document.querySelector('.header__burger-close-icon');
 const headerMenuWrap = document.querySelector('.header__nav');
 const headerMenu = document.querySelector('.header__list');
 const heroBtn = document.querySelector('.hero__btn');
@@ -24,14 +25,18 @@ const modalThanksClose = document.querySelector('.modal__thanks-close');
 const modalWrapThanks = document.querySelector('.modal__wrap_thanks');
 
 headerBurger.addEventListener('click', function(){
-    headerMenuWrap.classList.add('header__nav_active');
-    headerMenu.classList.add('header__list_active');
+    headerMenuWrap.classList.toggle('header__nav_active');
+    headerMenu.classList.toggle('header__list_active');
+    headerBurgerActive.classList.toggle('header__burger_active');
+    headerBurgerIcon.classList.toggle('header__burger-icon_active');
 })
 
-headerBurgerClose.addEventListener('click', function(){
-    headerMenuWrap.classList.remove('header__nav_active');
-    headerMenu.classList.remove('header__list_active');
-})
+// headerBurger.addEventListener('click', function(){
+//     headerMenuWrap.classList.remove('header__nav_active');
+//     headerMenu.classList.remove('header__list_active');
+//     headerBurgerActive.classList.remove('header__burger_active');
+//     headerBurgerIcon.classList.remove('header__burger-icon_active');
+// })
 
 heroBtn.addEventListener('click', function(){
     modalWrapForm.classList.add('modal__wrap_form_active');

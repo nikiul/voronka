@@ -66,7 +66,7 @@
     align-items: center;
 
     @media (max-width: 768px) {
-        padding-top: 80px;
+        padding-top: 55px;
         padding-right: 33px;
         padding-bottom: 33px;
         padding-left: 33px;
@@ -89,6 +89,10 @@
 
     @media (max-width: 450px) {
         width: 280px;
+    }
+
+    @media (max-width: 350px) {
+        width: 250px;
     }
 }
 
@@ -132,36 +136,78 @@
     display: none;
 
     @media (max-width: 768px) {
+        transform: translateX(0);
         display: flex;
         justify-content: center;
         align-items: center;
         width: 45px;
         height: 45px;
+        z-index: 11;
+        transition: transform 0.5s ease-in-out;
+    }
+}
+
+.header__burger_active {
+    transform: translateX(-440px);
+    transition: transform 0.5s ease-in-out;
+
+    @media (max-width: 550px) {
+        transform: translateX(-340px);
+    }
+
+    @media (max-width: 450px) {
+        transform: translateX(-270px);
+    }
+
+    @media (max-width: 350px) {
+        transform: translateX(-235px);
     }
 }
 
 .header__burger-icon {
     position: relative;
-    width: 40px;
+    width: 35px;
     height: 2px;
     background-color: #fff;
+    border-radius: 2px;
+    transition: background-color 0.2s ease-in 0.2s;
 
     &::before {
-        position: absolute;
         content: '';
-        width: 40px;
+        position: absolute;
+        width: 35px;
         height: 2px;
-        top: -15px;
+        top: -12px;
         background-color: #fff;
+        border-radius: 2px;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
     }
 
     &::after {
-        position: absolute;
         content: '';
-        width: 40px;
+        position: absolute;
+        width: 35px;
         height: 2px;
-        bottom: -15px;
+        top: 12px;
         background-color: #fff;
+        border-radius: 2px;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    }
+}
+
+.header__burger-icon_active {
+    background-color: transparent;
+
+    &::before {
+        transform: rotate(45deg);
+        top: 0;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+        top: 0;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
     }
 }
 
@@ -170,7 +216,7 @@
 
     @media (max-width: 768px) {
         position: absolute;
-        display: flex;
+        // display: flex;
         justify-content: center;
         align-items: center;
         width: 45px;

@@ -27,20 +27,20 @@
     margin-left: auto;
     margin-right: auto;
 
-    @media (max-width: 1285px) {
-        transform: scale(0.8);
-        bottom: -58px;
-    }
+    // @media (max-width: 1285px) {
+    //     transform: scale(0.8);
+    //     bottom: -58px;
+    // }
 }
 
 .why__item {
     position: absolute;
     display: flex;
 
-    &:hover .why__item-img {
-        transform: scale(1.1);
-        transition: transform 0.2s ease-in;
-    }
+    // &:hover .why__item-img {
+    //     transform: scale(1.1);
+    //     transition: transform 0.2s ease-in;
+    // }
 }
 
 .why__item1 {
@@ -245,10 +245,10 @@
     transform: translate(-50%, 0);
     z-index: 11;
 
-    @media (max-width: 1285px) {
-        width: 210px;
-        height: 210px;
-    }
+    // @media (max-width: 1285px) {
+    //     width: 210px;
+    //     height: 210px;
+    // }
 }
 
 .why__mid-bg {
@@ -262,9 +262,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    @media (max-width: 1285px) {
-        width: 80px;
-    }
+    // @media (max-width: 1285px) {
+    //     width: 80px;
+    // }
 }
 
 .why__bottom {
@@ -279,7 +279,7 @@
         width: 100%;
     }
 
-    @media (max-width: 1285px) {
-        width: 668px;
-    }
+    // @media (max-width: 1285px) {
+    //     width: 668px;
+    // }
 }
