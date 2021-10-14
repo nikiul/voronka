@@ -16,6 +16,12 @@ const headerBurgerClose = document.querySelector('.header__burger-close')
 const headerBurgerCloseIcon = document.querySelector('.header__burger-close-icon');
 const headerMenuWrap = document.querySelector('.header__nav');
 const headerMenu = document.querySelector('.header__list');
+const heroBtn = document.querySelector('.hero__btn');
+const formBtn = document.querySelector('.form__btn');
+const modalWrapForm = document.querySelector('.modal__wrap_form');
+const modalFormClose = document.querySelector('.modal__form-close');
+const modalThanksClose = document.querySelector('.modal__thanks-close');
+const modalWrapThanks = document.querySelector('.modal__wrap_thanks');
 
 headerBurger.addEventListener('click', function(){
     headerMenuWrap.classList.add('header__nav_active');
@@ -26,6 +32,34 @@ headerBurgerClose.addEventListener('click', function(){
     headerMenuWrap.classList.remove('header__nav_active');
     headerMenu.classList.remove('header__list_active');
 })
+
+heroBtn.addEventListener('click', function(){
+    modalWrapForm.classList.add('modal__wrap_form_active');
+})
+
+modalFormClose.addEventListener('click', function(){
+    modalWrapForm.classList.remove('modal__wrap_form_active');
+})
+
+formBtn.addEventListener('click', function(){
+    modalWrapForm.classList.remove('modal__wrap_form_active');
+    modalWrapThanks.classList.add('modal__wrap_thanks_active')
+})
+
+modalThanksClose.addEventListener('click', function(){
+    modalWrapThanks.classList.remove('modal__wrap_thanks_active')
+})
+//
+
+
+// Закрваем модалку при клике вне модалки
+window.onclick = function(event) {
+    if (event.target == modalWrapForm) {
+        modalWrapForm.classList.remove('modal__wrap_form_active');
+    } else if (event.target == modalWrapThanks) {
+        modalWrapThanks.classList.remove('modal__wrap_thanks_active');
+    }
+}
 //
 
 

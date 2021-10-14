@@ -1,0 +1,244 @@
+.modal__wrap_form,
+.modal__wrap_thanks {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: rgba(37, 37, 37, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.modal__wrap_form_active,
+.modal__wrap_thanks_active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__form-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    padding: 45px;
+    background: #1A3B60;
+
+    @media (max-width: 740px) {
+        width: 575px;
+    }
+
+    @media (max-width: 600px) {
+        padding: 25px;
+        width: 400px;
+    }
+
+    @media (max-width: 420px) {
+        width: 290px;
+    }
+}
+
+.modal__thanks-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 45px;
+    background: #1A3B60;
+
+    @media (max-width: 420px) {
+        width: 300px;
+        padding: 20px;
+    }
+}
+
+.modal__form-close,
+.modal__thanks-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+    span {
+        position: relative;
+        width: 40px;
+        height: 2px;
+        background-color: #fff;
+        transform: rotate(45deg);
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background-color: #fff;
+            transform: rotate(90deg);
+
+            @media (max-width: 600px) {
+                width: 25px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            width: 25px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        width: 25px;
+        height: 25px;
+    }
+
+    @media (max-width: 420px) {
+        right: 10px;
+        top: 10px;
+    }
+}
+
+.form__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.modal__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__cols-wrap {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__form-col {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    input {
+        width: 47%;
+
+        @media (max-width: 600px) {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        margin-bottom: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.form__input-name {
+    width: 47%;
+    position: relative;
+
+    span {
+        position: absolute;
+        top: 50%;
+        left: 110px;
+        transform: translate(0, -50%);
+        font-weight: 500;
+        font-size: 18px;
+        color: #c60000;
+
+        @media (max-width: 600px) {
+            top: 30%;
+        }
+    }
+
+    input {
+        width: 100%;
+    }
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.form__input-tel {
+    width: 47%;
+    position: relative;
+
+    span {
+        position: absolute;
+        top: 50%;
+        left: 210px;
+        transform: translate(0, -50%);
+        font-weight: 500;
+        font-size: 18px;
+        color: #c60000;
+
+        @media (max-width: 600px) {
+            top: 30%;
+        }
+    }
+
+    input {
+        width: 100%;
+    }
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.form__btn {
+    width: 47%;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    background-color: transparent;
+
+    &:hover {
+        border: 3px solid #002e45;
+        background-color: #fff;
+        color: #002e45;
+    }
+
+    @media (max-width: 600px) {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (max-width: 420px) {
+        width: 100%;
+    }
+}
+
+.modal__thanks-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    p {
+        margin-bottom: 30px;
+        font-size: 30px;
+        color: #fff;
+
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
