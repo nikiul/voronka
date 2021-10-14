@@ -49,6 +49,19 @@ formBtn.addEventListener('click', function(){
 modalThanksClose.addEventListener('click', function(){
     modalWrapThanks.classList.remove('modal__wrap_thanks_active')
 })
+
+const applicationCol = document.querySelectorAll('.application__col');
+if(applicationCol) {
+    for (let item of applicationCol) {
+        const applicationBtn = item.querySelector('.applciation__btn');
+
+        if(applicationBtn) {
+            applicationBtn.addEventListener('click', function(){
+                modalWrapThanks.classList.add('modal__wrap_thanks_active');
+            })
+        }
+    }
+};
 //
 
 

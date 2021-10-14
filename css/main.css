@@ -649,6 +649,14 @@ input:-ms-input-placeholder {
   margin-right: auto;
 }
 
+@media (max-width: 1285px) {
+  .why__items-wrap {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    bottom: -58px;
+  }
+}
+
 .why__item {
   position: absolute;
   display: -webkit-box;
@@ -893,6 +901,18 @@ input:-ms-input-placeholder {
   z-index: 11;
 }
 
+@media (max-width: 1285px) {
+  .why__mid {
+    width: 210px;
+    height: 210px;
+  }
+}
+
+.why__mid-bg {
+  width: 100%;
+  height: 100%;
+}
+
 .why__mid-logo {
   position: absolute;
   top: 50%;
@@ -901,12 +921,30 @@ input:-ms-input-placeholder {
           transform: translate(-50%, -50%);
 }
 
+@media (max-width: 1285px) {
+  .why__mid-logo {
+    width: 80px;
+  }
+}
+
 .why__bottom {
+  width: 874px;
+  height: 195px;
   position: absolute;
   bottom: 60px;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
+}
+
+.why__bottom img {
+  width: 100%;
+}
+
+@media (max-width: 1285px) {
+  .why__bottom {
+    width: 668px;
+  }
 }
 
 .application {
@@ -1099,15 +1137,32 @@ input:-ms-input-placeholder {
   margin-bottom: 28px;
 }
 
-.application__input-name span {
+.application__input-name label {
   position: absolute;
   top: 50%;
-  left: 110px;
+  left: 24px;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
+  font-family: 'MuseoSans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #afafaf;
+}
+
+.application__input-name label span {
   font-weight: 500;
   font-size: 18px;
   color: #c60000;
+}
+
+.application__input-name input:valid + label {
+  display: none;
+}
+
+.application__input-name input:focus + label {
+  display: none;
 }
 
 @media (max-width: 800px) {
@@ -1127,15 +1182,32 @@ input:-ms-input-placeholder {
   margin-bottom: 28px;
 }
 
-.application__input-tel span {
+.application__input-tel label {
   position: absolute;
   top: 50%;
-  left: 208px;
+  left: 24px;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
+  font-family: 'MuseoSans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #afafaf;
+}
+
+.application__input-tel label span {
   font-weight: 500;
   font-size: 18px;
   color: #c60000;
+}
+
+.application__input-tel input:valid + label {
+  display: none;
+}
+
+.application__input-tel input:focus + label {
+  display: none;
 }
 
 @media (max-width: 800px) {
@@ -1202,6 +1274,7 @@ input:-ms-input-placeholder {
           align-items: center;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 }
 
 .cases__content {
@@ -2504,21 +2577,32 @@ input:-ms-input-placeholder {
   position: relative;
 }
 
-.form__input-name span {
+.form__input-name label {
   position: absolute;
   top: 50%;
-  left: 110px;
+  left: 24px;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
+  font-family: 'MuseoSans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #afafaf;
+}
+
+.form__input-name label span {
   font-weight: 500;
   font-size: 18px;
   color: #c60000;
 }
 
-@media (max-width: 600px) {
-  .form__input-name span {
-    top: 30%;
-  }
+.form__input-name input:valid + label {
+  display: none;
+}
+
+.form__input-name input:focus + label {
+  display: none;
 }
 
 .form__input-name input {
@@ -2540,21 +2624,32 @@ input:-ms-input-placeholder {
   position: relative;
 }
 
-.form__input-tel span {
+.form__input-tel label {
   position: absolute;
   top: 50%;
-  left: 210px;
+  left: 24px;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
+  font-family: 'MuseoSans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #afafaf;
+}
+
+.form__input-tel label span {
   font-weight: 500;
   font-size: 18px;
   color: #c60000;
 }
 
-@media (max-width: 600px) {
-  .form__input-tel span {
-    top: 30%;
-  }
+.form__input-tel input:valid + label {
+  display: none;
+}
+
+.form__input-tel input:focus + label {
+  display: none;
 }
 
 .form__input-tel input {

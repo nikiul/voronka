@@ -26,6 +26,11 @@
     height: 610px;
     margin-left: auto;
     margin-right: auto;
+
+    @media (max-width: 1285px) {
+        transform: scale(0.8);
+        bottom: -58px;
+    }
 }
 
 .why__item {
@@ -239,10 +244,16 @@
     left: 50%;
     transform: translate(-50%, 0);
     z-index: 11;
+
+    @media (max-width: 1285px) {
+        width: 210px;
+        height: 210px;
+    }
 }
 
 .why__mid-bg {
-
+    width: 100%;
+    height: 100%;
 }
 
 .why__mid-logo {
@@ -250,11 +261,25 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media (max-width: 1285px) {
+        width: 80px;
+    }
 }
 
 .why__bottom {
+    width: 874px;
+    height: 195px;
     position: absolute;
     bottom: 60px;
     left: 50%;
     transform: translate(-50%, 0);
+
+    img {
+        width: 100%;
+    }
+
+    @media (max-width: 1285px) {
+        width: 668px;
+    }
 }
