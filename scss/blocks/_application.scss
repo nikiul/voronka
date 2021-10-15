@@ -28,6 +28,17 @@
         bottom: -2px;
         background-color: #002e45;
     }
+
+    &::after {
+        @media (max-width: 768px) {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 6px;
+            top: -2px;
+            background-color: #002e45;
+        }
+    }
 }
 
 .application__content {
